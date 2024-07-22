@@ -1,5 +1,5 @@
 document.getElementById("downloadButton").addEventListener("click", () => {
-  fetch("http://localhost:3000/download")
+  fetch("https://jupeeze.github.io/Past_Exam_Downloader/download")
     .then((response) => response.blob())
     .then((blob) => {
       const url = window.URL.createObjectURL(blob);
